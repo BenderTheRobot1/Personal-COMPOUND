@@ -49,7 +49,10 @@ const cart = new ShoppingCart();
 // Usage example:
 cart.addItem({ name: 'Item 1', price: 10 });
 cart.addItem({ name: 'Item 2', price: 20 });
+cart.addItem({ name: 'Item 3', price: 50 });
+cart.addItem({ name: 'Item 4', price: 1000 });
 console.log('Total:', cart.calculateTotal());
+
 
 try {
   const paymentStatus = cart.processPayment('1234567890', 30);
